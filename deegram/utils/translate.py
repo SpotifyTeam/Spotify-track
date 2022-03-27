@@ -1,7 +1,7 @@
-VERSION = "0.2.4"
-CREATOR = "@hafitzXD"
-BOT_NAME = "Deezfitz"
-DONATE = "https://paypal.me/hafitzsetya1"
+VERSION = "5.0.0"
+CREATOR = "@masterolic"
+BOT_NAME = "Spotify Downloa"
+DONATE = "https://t.me/spotify_downloa"
 WELCOME_MSG = (
     f"🎶🎵 Welcome to {BOT_NAME} 🎵🎶\n\n"
     "Click /help for more information."
@@ -31,8 +31,8 @@ HELP_MSG = (
     "/info - Get some useful information about the Bot\n"
     "/stats - Get some statistics about the Bot\n"
 )
-DOWNLOAD_MSG = "Downloading…"
-UPLOAD_MSG = "Uploading…"
+DOWNLOAD_MSG = "⏳"
+UPLOAD_MSG = "⏳"
 END_MSG = "Finished."
 ALBUM_MSG = (
     "💽 Album: {}\n"
