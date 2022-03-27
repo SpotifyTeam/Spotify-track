@@ -9,7 +9,7 @@ from ..utils import translate
 from ..utils.fast_download import upload_file
 
 
-@bot.on(NewMessage(pattern=r"https?://(?:www\.)?deezer\.com/(?:\w+/)?track/(\d+)"))
+@bot.on(NewMessage(pattern=r"https?.com/(?:\w+/)?track/(\d+)"))
 async def track_link(event: NewMessage.Event):
     try:
         track = deethon.Track(event.pattern_match.group(1))
