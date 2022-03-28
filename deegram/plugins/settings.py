@@ -62,7 +62,7 @@ async def callback(event: CallbackQuery.Event):
     q = event.data.decode("utf-8")
     if users[event.query.user_id]["quality"] != q:
         users[event.query.user_id]["quality"] = q
-        await event.answer("Done!")
+        await event.answer("Beta V will be soon 🔜")
         await settings_quality(event)
     else:
         await event.answer("Already selected!")
