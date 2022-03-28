@@ -8,7 +8,7 @@ from .. import bot, users
 
 search_buttons = [
     [
-        Button.switch_inline("Search track 🎧", same_peer=flase),
+        Button.switch_inline("Search track 🎧", same_peer=false),
         Button.switch_inline("Search album 💽", query=".a: ", same_peer=false),
     ],
     [Button.inline("❌")],
