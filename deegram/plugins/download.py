@@ -85,12 +85,7 @@ async def album_link(event: NewMessage.Event):
             file_name = f"{album.artist} - {album.tracks[num].title}{file_ext}"
             upload_status = UploadStatus(event, num + 1, album.total_tracks)
             await upload_status.start()
-            r = await upload_file(
-                file_name=file_name,
-                client=bot,
-                file=open(track, 'rb'),
-                progress_callback=upload_status.progress
-            )
+            
             upload_status.finished()
             await bot.send_file(
                 event.chat_id,
