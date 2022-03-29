@@ -6,7 +6,7 @@ from telethon.events import NewMessage, CallbackQuery, StopPropagation
 
 from .. import bot, users
 
-search_buttons = [
+search_button = [
     [
         Button.switch_inline("Search track 🎧" , same_peer= True),
         Button.switch_inline("Search album 💽", query=".a: " , same_peer= True),
