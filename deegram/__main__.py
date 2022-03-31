@@ -29,7 +29,7 @@ start_inline_search_buttons = [
 
     [Button.inline('❌')]
 
-]
+#]
 
 @bot.on(NewMessage(pattern='/start'))
 async def start(event: NewMessage.Event):
