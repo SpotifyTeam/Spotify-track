@@ -54,5 +54,4 @@ Start_inline_search_buttons = [
     [Button.url("OWNER", url_channe)]
     [Button.switch_inline(translate.SEARCH_TRACK),
      Button.switch_inline(translate.SEARCH_ALBUM, query=".a ")],
-    [Button.inline('❌')]
-]
+    [Button.inline('❌')]]
