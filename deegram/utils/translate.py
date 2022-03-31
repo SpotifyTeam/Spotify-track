@@ -1,3 +1,4 @@
+from telethon import Button
 VERSION = "5.0.0"
 CREATOR = "@masterolic"
 BOT_NAME = "Spotify Downloa"
