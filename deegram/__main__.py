@@ -20,7 +20,7 @@ start_inline_search_buttons = [
 ]
 
 
-inline_search_buttons = [
+ inline_search_buttons = [
     [Button.switch_inline(translate.SEARCH_TRACK, same_peer=True),
      Button.switch_inline(translate.SEARCH_ALBUM, query=".a ", same_peer=True)],
     [Button.inline('❌')]
