@@ -19,15 +19,15 @@ url_owner= f"https://t.me/masterolic"
 
 #start_inline_search_buttons = [
 
-    [Button.url("OWNER", url_owner),
+    #[Button.url("OWNER", url_owner),
 
-    [Button.url("OWNER", url_channe)]
+   # [Button.url("OWNER", url_channe)]
 
-    [Button.switch_inline(translate.SEARCH_TRACK),
+   # [Button.switch_inline(translate.SEARCH_TRACK),
 
-     (Button.switch_inline(translate.SEARCH_ALBUM, query=".a ")],
+    # (Button.switch_inline(translate.SEARCH_ALBUM, query=".a ")],
 
-    [Button.inline('❌')]
+    #[Button.inline('❌')]
 
 #]
 
