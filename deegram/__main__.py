@@ -4,14 +4,15 @@ import time
 from telethon import Button, events
 from telethon.events import NewMessage, StopPropagation
 
-from .. import bot, botStartTime, logger, plugins, OWNER_ID
+from . import bot, botStartTime, logger, plugins, OWNER_ID
 from .utils import translate, fetch
 from .utils.bot_utils import get_readable_file_size, get_readable_time
 
 plugins.load()
+
 url_channe = f"https://t.me/+Gfz6CoRe6BQ3NmQ9"
 url_owner= f"https://t.me/masterolic"
-start_inline_search_buttons = [
+inline_search_buttons = [
     [Button.url("OWNER", url_owner),
     [Button.url("OWNER", url_channe)]
     [Button.switch_inline(translate.SEARCH_TRACK),
@@ -19,9 +20,10 @@ start_inline_search_buttons = [
     [Button.inline('❌')]
 ]
 
+
 @bot.on(NewMessage(pattern='/start'))
 async def start(event: NewMessage.Event):
-    await event.reply(translate.WELCOME_MSG, buttons=start_inline_search_buttons)
+    await event.reply(translate.WELCOME_MSG, buttons=inline_search_buttons)
     raise StopPropagation
 
 
