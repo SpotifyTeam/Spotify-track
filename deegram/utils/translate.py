@@ -49,9 +49,7 @@ TRACK_MSG = (
 CHOOSE = "Choose:"
 SEARCH_ALBUM = "Search Album 💽"
 SEARCH_TRACK = "Search Track 🎧"
-url_channe = f"https://t.me/+Gfz6CoRe6BQ3NmQ9"
-url_owner= f"https://t.me/masterolic"
-start_inline_search_buttons = [
+Start_inline_search_buttons = [
     [Button.url("OWNER", url_owner),
     [Button.url("OWNER", url_channe)]
     [Button.switch_inline(translate.SEARCH_TRACK),
