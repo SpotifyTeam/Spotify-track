@@ -49,7 +49,7 @@ TRACK_MSG = (
 CHOOSE = "Choose:"
 SEARCH_ALBUM = "Search Album 💽"
 SEARCH_TRACK = "Search Track 🎧"
-Start_inline_search_buttons = (
+Start_inline_search_buttons = [
     [Button.url("OWNER", url_owner),
     [Button.url("OWNER", url_channe)]
     [Button.switch_inline(translate.SEARCH_TRACK),
