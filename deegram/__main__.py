@@ -5,7 +5,7 @@ from telethon import Button, events
 from telethon.events import NewMessage, StopPropagation
 
 from . import bot, botStartTime, logger, plugins, OWNER_ID
-from .utils import translate, fetch , Start_inline_search_buttons
+from .utils import translate, fetch 
 from .utils.bot_utils import get_readable_file_size, get_readable_time
 
 plugins.load()
