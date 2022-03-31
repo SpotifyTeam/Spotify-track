@@ -4,13 +4,7 @@ BOT_NAME = "Spotify Downloa"
 DONATE = "https://t.me/spotify_downloa"
 WELCOME_MSG = (
     f"🎶🎵 Welcome to {BOT_NAME} 🎵🎶\n\n"
-    "This is the SpotifyDL Bot!
-
-I can help you search 🔍, listen 🎧 and download 📱 songs easily using Spotify URLs and custom queries! You can directly send Spotify URLs of tracks, playlists and albums to download them.
-
----
-
-Use Help to know about command usage.."
+    "I can help you search 🔍, listen 🎧 and download 📱 songs easily using Spotify URLs and custom queries! You can directly send Spotify URLs of tracks, playlists and albums to download them.\n---\n\nUse Help to know about command usage.."
 )
 INFO_MSG = (
     f"👤 Creator: {CREATOR}\n"
