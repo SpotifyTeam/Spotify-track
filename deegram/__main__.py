@@ -12,13 +12,7 @@ plugins.load()
 
 url_channe = f"https://t.me/+Gfz6CoRe6BQ3NmQ9"
 url_owner= f"https://t.me/masterolic"
-inline_search_buttons = [
-    [Button.url("OWNER", url_owner),
-    [Button.url("OWNER", url_channe)]
-    [Button.switch_inline(translate.SEARCH_TRACK),
-     Button.switch_inline(translate.SEARCH_ALBUM, query=".a ")],
-    [Button.inline('❌')]
-]
+
 
 
 @bot.on(NewMessage(pattern='/start'))
