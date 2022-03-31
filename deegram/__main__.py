@@ -17,7 +17,7 @@ url_channe = f"https://t.me/+Gfz6CoRe6BQ3NmQ9"
 
 url_owner= f"https://t.me/masterolic"
 
-#start_inline_search_buttons = [
+start_inline_search_buttons = [
 
     #[Button.url("OWNER", url_owner),
 
