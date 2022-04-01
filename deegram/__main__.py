@@ -17,7 +17,8 @@ Start_inline_search_buttons =[
 
      Button.url("OWNER", url=f"https://t.me/masterolic")],
     [Button.url("SPOTIFY MUSIC", url=f"https://t.me/Spotify_downloa"),
-    Button.url("RATE ME", url=f"https://t.me/dailychannelsbot?start=spotify_downloa_bot")],
+    Button.url("RATE ME", url=f"https://t.me/dailychannelsbot?start=spotify_downloa_bot"),
+    Button.url("SHARE ME" , url=f"http://t.me/share/url?url=Checkout%20%40Spotify_downloa_bot%20for%20searching%20music")],
     [Button.switch_inline(translate.SEARCH_TRACK , same_peer= True),
 
      Button.switch_inline(translate.SEARCH_ALBUM, query=".a " , same_peer= True)],
