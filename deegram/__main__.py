@@ -75,7 +75,7 @@ async def search(event: NewMessage.Event):
         [Button.inline('❌')]
     ])
     await sleep(10.5)
-    await event.delete()
+    await event.delete() 1
 
 
 with bot:
