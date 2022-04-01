@@ -62,11 +62,11 @@ async def callback(event: CallbackQuery.Event):
     q = event.data.decode("utf-8")
     if users[event.query.user_id]["quality"] != q:
         users[event.query.user_id]["quality"] = q
-        await event.answer("𝗕𝗲𝘁𝗮 𝗩 𝟱.𝟬 𝘄𝗶𝗹𝗹 𝗯𝗲 𝘀𝗼𝗼𝗻 🔜")
+        await event.answer("𝑩𝑬𝑻𝑨  𝑽 𝑪𝑼𝑹𝑹𝑬𝑵𝑻 = 𝑴𝑷3_320")
         await settings_quality(event)
     else:
-        await event.answer("Already selected!")
-
+        await event.answer("Already selected vro!,")
+        
 
 @bot.on(CallbackQuery(pattern="❌"))
 async def cancel(event: CallbackQuery.Event):
