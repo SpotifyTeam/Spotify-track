@@ -18,9 +18,9 @@ Start_inline_search_buttons =[
      Button.url("OWNER", url=f"https://t.me/masterolic")],
     [Button.url("SPOTIFY MUSIC", url=f"https://t.me/Spotify_downloa"),
     Button.url("RATE ME", url=f"https://t.me/dailychannelsbot?start=spotify_downloa_bot")],
-    [Button.switch_inline(translate.SEARCH_TRACK),
+    [Button.switch_inline(translate.SEARCH_TRACK , same_peer= True),
 
-     Button.switch_inline(translate.SEARCH_ALBUM, query=".a ")],
+     Button.switch_inline(translate.SEARCH_ALBUM, query=".a " , same_peer= True)],
     [Button.inline('❌')]]
 
 @bot.on(NewMessage(pattern='/start'))
