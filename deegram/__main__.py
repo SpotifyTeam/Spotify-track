@@ -63,7 +63,7 @@ async def stats(event: NewMessage.Event):
     raise StopPropagation
 
 
-@bot.on(events.NewMessage())
+@bot.on(events.NewMessage(outgoing=False))
 async def search(event: NewMessage.Event):
     if event.text.startswith('/'):
         search_query = ''
