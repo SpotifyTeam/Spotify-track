@@ -10,18 +10,16 @@ from .utils.bot_utils import get_readable_file_size, get_readable_time
 
 plugins.load()
 
-url_channe = f"https://t.me/+Gfz6CoRe6BQ3NmQ9"
-url_owner= f"https://t.me/masterolic"
+
 Start_inline_search_buttons =[
 
-    [Button.url("OWNER", url_owner),
+    [Button.url("translate.SEARCH_TRACK", url=f"https://t.me/+Gfz6CoRe6BQ3NmQ9"),
 
-     Button.url("OWNER", url_channe)],
+     Button.url("translate.SEARCH_TRACK", url= f"https://t.me/masterolic")],
 
     [Button.switch_inline(translate.SEARCH_TRACK),
 
      Button.switch_inline(translate.SEARCH_ALBUM, query=".a ")],
-
     [Button.inline('❌')]]
 
 @bot.on(NewMessage(pattern='/start'))
