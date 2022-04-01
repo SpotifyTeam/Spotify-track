@@ -1,6 +1,6 @@
 import shutil, psutil
 import time
-
+from asyncio import sleep
 from telethon import Button, events
 from telethon.events import NewMessage, StopPropagation
 
@@ -74,6 +74,8 @@ async def search(event: NewMessage.Event):
          Button.switch_inline(translate.SEARCH_ALBUM, query=".a " + search_query, same_peer=True)],
         [Button.inline('❌')]
     ])
+    await sleep(10.5)
+    await event.delete()
 
 
 with bot:
