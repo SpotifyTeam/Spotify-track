@@ -5,7 +5,7 @@ from telethon import Button, events
 from telethon.events import NewMessage, StopPropagation
 
 from . import bot, botStartTime, logger, plugins, OWNER_ID
-from .utils import translate, fetch 
+from .utils import translate, fetch
 from .utils.bot_utils import get_readable_file_size, get_readable_time
 
 plugins.load()
@@ -75,7 +75,7 @@ async def search(event: NewMessage.Event):
         [Button.inline('❌')]
     ])
     await sleep(15.5)
-    await translate.delete()
+    await event.delete()
 
 
 with bot:
