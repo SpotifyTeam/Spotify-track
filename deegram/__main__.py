@@ -74,8 +74,6 @@ async def search(event: NewMessage.Event):
          Button.switch_inline(translate.SEARCH_ALBUM, query=".a " + search_query, same_peer=True)],
         [Button.inline('❌')]
     ])
-    await sleep(20.5)
-    await event.delete()
 
 
 with bot:
