@@ -9,7 +9,7 @@ from .. import bot, users
 search_button = [
     [
         Button.switch_inline("Search track 🎧" , same_peer= True),
-        Button.switch_inline("Search album 💽", query=".a: " , same_peer= True),
+        Button.switch_inline("Search album 💽" , same_peer= True),
     ],
     [Button.inline("❌")],
 ]
