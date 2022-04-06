@@ -41,20 +41,7 @@ async def track_link(event: NewMessage.Event):
             progress_callback=upload_status.progress,
         )
         upload_status.finished()
-        await bot.send_file(
-            event.chat_id,
-            uploaded_file,
-            thumb=track.album.cover_medium,
-            attributes=[
-                DocumentAttributeAudio(
-                    voice=False,
-                    title=track.title,
-                    duration=track.duration,
-                    performer=track.artist,
-                )
-            ],
-        )
-    raise StopPropagation
+        
 
 
 @bot.on(NewMessage(pattern=r"https?://(?:www\.)?deezer\.com/(?:\w+/)?album/(\d+)"))
