@@ -75,7 +75,8 @@ async def search(event: NewMessage.Event):
         [Button.inline('❌')]
     ])
 
-
+     await sleep(10.5)
+    await event.delete()
 with bot:
     bot.run_until_disconnected()
     logger.info('Bot stopped')
