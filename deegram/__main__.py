@@ -13,12 +13,12 @@ plugins.load()
 
 Start_inline_search_buttons =[
     [Button.url("ADD ME TO YOUR GROUP ➕" ,url=f"https://t.me/dailychannelsbot?start=spotify_downloa_bot")],
-    [Button.url("SPOTIFY TEAM", url=f"https://t.me/+Gfz6CoRe6BQ3NmQ9"),
-
-     Button.url("OWNER", url=f"https://t.me/masterolic")],
-    [Button.url("SPOTIFY MUSIC", url=f"https://t.me/Spotify_downloa"),
-    Button.url("RATE ME", url=f"https://t.me/dailychannelsbot?start=spotify_downloa_bot"),
-    Button.url("SHARE ME" , url=f"http://t.me/share/url?url=Checkout%20%40Spotify_downloa_bot%20for%20searching%20music")],
+    [Button.url("SPOTIFY TEAM⚡", url=f"https://t.me/+Gfz6CoRe6BQ3NmQ9"),
+     Button.url("💥OWNER", url=f"https://t.me/masterolic"),
+     Button.url("❓FAQ?", url=f"http://telegra.ph/𝗦𝗽𝗼𝘁𝗶𝗳𝘆-𝗗𝗼𝘄𝗻𝗹𝗼𝗮-ʙᴏᴛ---𝗤𝗔-04-07-2")],
+    [Button.url("🎶SPOTIFY MUSIC", url=f"https://t.me/Spotify_downloa"),
+    Button.url("👀💖RATE ME", url=f"https://t.me/dailychannelsbot?start=spotify_downloa_bot"),
+    Button.url("💓SHARE ME" , url=f"http://t.me/share/url?url=Checkout%20%40Spotify_downloa_bot%20for%20searching%20music")],
     [Button.switch_inline(translate.SEARCH_TRACK , same_peer= True),
 
      Button.switch_inline(translate.SEARCH_ALBUM, query=".a " , same_peer= True)],
