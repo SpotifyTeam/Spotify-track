@@ -71,7 +71,7 @@ async def search(event: NewMessage.Event):
         search_query = event.text
     await event.respond(translate.CHOOSE, buttons=[
         [Button.switch_inline(translate.SEARCH_TRACK, query=search_query, same_peer=True),
-         Button.switch_inline(translate.SEARCH_ALBUM, query=search_query, same_peer=True)],
+         Button.switch_inline(translate.SEARCH_ALBUM, query=".a " +search_query, same_peer=True)],
         [Button.inline('❌')]
     ])
     await sleep(2.3)
