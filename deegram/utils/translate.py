@@ -1,5 +1,5 @@
 from telethon import Button
-VERSION = "5.0.0"
+VERSION = "6.6.0"
 CREATOR = "@masterolic"
 BOT_NAME = "Spotify Downloa"
 DONATE = "https://t.me/spotify_downloa"
@@ -48,5 +48,5 @@ TRACK_MSG = (
     "📅 Date: {}"
 )
 CHOOSE = "Choose:"
-SEARCH_ALBUM = "Search Album 💽"
-SEARCH_TRACK = "Search Track 🎧"
+SEARCH_ALBUM = "Search Album 📻"
+SEARCH_TRACK = "Search Track 🎙️"
