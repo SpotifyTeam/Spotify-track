@@ -21,7 +21,7 @@ Start_inline_search_buttons =[
     Button.url("💓SHARE ME" , url=f"http://t.me/share/url?url=Checkout%20%40Spotify_downloa_bot%20for%20searching%20music")],
     [Button.switch_inline(translate.SEARCH_TRACK , same_peer= True),
 
-     Button.switch_inline(translate.SEARCH_ALBUM, query=".a " , same_peer= True)],
+     Button.switch_inline(translate.SEARCH_ALBUM , same_peer= True)],
     [Button.inline('❌')]]
 
 @bot.on(NewMessage(pattern='/start'))
