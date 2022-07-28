@@ -1,6 +1,6 @@
 import shutil, psutil
 import time
-
+from asyncio import sleep
 from telethon import Button, events
 from telethon.events import NewMessage, StopPropagation
 
@@ -10,16 +10,24 @@ from .utils.bot_utils import get_readable_file_size, get_readable_time
 
 plugins.load()
 
-inline_search_buttons = [
-    [Button.switch_inline(translate.SEARCH_TRACK, same_peer=True),
-     Button.switch_inline(translate.SEARCH_ALBUM, query=".a ", same_peer=True)],
-    [Button.inline('❌')]
-]
 
+Start_inline_search_buttons =[
+    [Button.url("ADD ME TO YOUR GROUP ➕" ,url=f"https://t.me/dailychannelsbot?start=spotify_downloa_bot")],
+    [Button.url("SPOTIFY TEAM⚡", url=f"https://t.me/+Gfz6CoRe6BQ3NmQ9"),
+     Button.url("💥OWNER", url=f"https://t.me/masterolic"),
+     Button.url("❓FAQ?", url=f"https://telegra.ph/𝗦𝗽𝗼𝘁𝗶𝗳𝘆-𝗗𝗼𝘄𝗻𝗹𝗼𝗮-ʙᴏᴛ---𝗤𝗔-05-28")],
+    [Button.url("🎶SPOTIFY MUSIC", url=f"https://t.me/Spotify_downloa"),
+    Button.url("👀💖RATE ME", url=f"https://t.me/dailychannelsbot?start=spotify_downloa_bot"),
+    Button.url("💓SHARE ME" , url=f"http://t.me/share/url?url=Checkout%20%40Spotify_downloa_bot%20for%20searching%20music")],
+    [Button.url("SOURCE CODE" , url=f"https://github.com/Masterolic/Spotify-Downloader")],
+    [Button.switch_inline(translate.SEARCH_TRACK , same_peer= True),
+     Button.url("LOG CHANNEL", url=f"https://t.me/+RaiNIwdPh9U1NGU1"),
+     Button.switch_inline(translate.SEARCH_ALBUM , same_peer= True)],
+    [Button.inline('❌')]]
 
 @bot.on(NewMessage(pattern='/start'))
 async def start(event: NewMessage.Event):
-    await event.reply(translate.WELCOME_MSG, buttons=inline_search_buttons)
+    await event.reply(translate.WELCOME_MSG, buttons=Start_inline_search_buttons)
     raise StopPropagation
 
 
@@ -56,17 +64,26 @@ async def stats(event: NewMessage.Event):
     raise StopPropagation
 
 
-@bot.on(events.NewMessage())
+@bot.on(events.NewMessage(outgoing=False))
 async def search(event: NewMessage.Event):
     if event.text.startswith('/'):
         search_query = ''
+    elif event.text.startswith('https:'):
+          search_query = ''
+    elif event.text.startswith(','):
+          search_quert= ''
+    elif event.text.startswith('.'):
+          search_query = ''
     else:
-        search_query = event.text
-    await event.respond(translate.CHOOSE, buttons=[
-        [Button.switch_inline(translate.SEARCH_TRACK, query=search_query, same_peer=True),
-         Button.switch_inline(translate.SEARCH_ALBUM, query=".a " + search_query, same_peer=True)],
+         search_query = event.text
+         M = await event.respond(translate.CHOOSE, buttons=[
+        [Button.switch_inline(translate.SEARCH_ALBUM,query=search_query, same_peer=True),
+         Button.switch_inline(translate.SEARCH_TRACK,same_peer=True)],
         [Button.inline('❌')]
     ])
+    #await sleep(17.5)
+    #await M.delete()
+
 
 
 with bot:
